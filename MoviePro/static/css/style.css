@@ -1,0 +1,29 @@
+#nomovie{
+    color: rebeccapurple;
+    text-align: center;
+}
+body{
+    background:url(https://images.unsplash.com/photo-1459802071246-377c0346da93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BsYXNofGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60)
+}
+.container .jumbotron{
+    margin-top: 100px;
+    background: orange;
+    color: red;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+th{
+    background:red;
+    color:yellow;
+}
+table{
+    border: 2px solid yellow;
+    margin:auto;
+    font-size: 30px;
+}
+h{
+    text-align: center;
+}
+td{
+    background:white;
+    color:green;
+}

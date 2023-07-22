@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static "css/style.css" %}">
+    
+</head>
+<body>
+<h1>Movies Information</h1>
+{%if mlist%}
+<table border="2">
+    <thead>
+        <th>Release Date</th>
+        <th>Movie Name</th>
+        <th>Actors</th>
+        <th>Actress</th>
+        <th>Rating</th>
+        
+    </thead>
+    {%for movie in mlist%}
+        <tr>
+            <td>{{movie.rdate}}</td>
+            <td>{{movie.moviename}}</td>
+            <td>{{movie.actor}}</td>
+            <td>{{movie.actress}}</td>
+            <td>{{movie.rating}}</td>
+        </tr>
+    {%endfor%}
+    {%else%}
+        <h1 id="nomovie">Movie List Not Found!!!</h1>
+    {% endif %}
+
+</table>
+
+
+    
+</body>
+</html>
